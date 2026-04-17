@@ -1,0 +1,14 @@
+
+> regional-performance-radar@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.16
+  - Local:        http://localhost:3000
+  - Experiments (use with caution):
+    · typedRoutes
+
+ ✓ Starting...
+ ✓ Ready in 1808ms
+ ○ Compiling / ...
+ ✓ Compiled / in 7.6s (2788 modules)
+ GET / 200 in 8039ms
