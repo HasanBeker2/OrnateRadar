@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node -e \"try{require('fs').rmSync('.next',{recursive:true,force:true})}catch(e){}\" && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -19,6 +19,7 @@
     "next": "14.2.16",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-rnd": "^10.5.3",
     "react-simple-maps": "^3.0.0",
     "recharts": "^2.13.0",
     "tailwind-merge": "^2.5.3",

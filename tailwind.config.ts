@@ -6,14 +6,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)"]
+        sans: ["var(--font-space)", "system-ui", "sans-serif"]
       },
       colors: {
-        background: "#F8F9FB",
-        foreground: "#0F172A"
+        background: "#060a12",
+        foreground: "#e2e8f0"
       },
       boxShadow: {
-        soft: "0 10px 30px -16px rgba(15, 23, 42, 0.25)"
+        soft: "0 4px 24px rgba(0,0,0,0.6)"
       }
     }
   },
