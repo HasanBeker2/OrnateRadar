@@ -38,15 +38,15 @@ export function SummaryCards({ totals }: SummaryCardsProps) {
         const c = colorMap[card.color];
         const positive = card.trend >= 0;
         return (
-          <div key={card.label} className={`panel border ${c.border} p-4`}>
-            <div className={`mb-3 h-0.5 w-full rounded-full bg-gradient-to-r ${c.bar} opacity-70`} />
-            <div className="flex items-center gap-1.5 mb-2">
+          <div key={card.label} className={`panel border ${c.border} p-2.5`}>
+            <div className={`mb-2 h-0.5 w-full rounded-full bg-gradient-to-r ${c.bar} opacity-70`} />
+            <div className="flex items-center gap-1 mb-1">
               <div className={`h-1.5 w-1.5 rounded-full ${c.dot}`} />
-              <p className="text-[10px] font-medium uppercase tracking-widest text-slate-400">{card.label}</p>
+              <p className="text-[9px] font-medium uppercase tracking-widest text-slate-400">{card.label}</p>
             </div>
-            <p className="text-2xl font-semibold tracking-tight text-slate-100">{card.value}</p>
-            <p className={`mt-1.5 inline-flex items-center gap-0.5 text-xs font-medium ${positive ? "text-emerald-400" : "text-rose-400"}`}>
-              {positive ? <ArrowUpRight className="h-3.5 w-3.5" /> : <ArrowDownRight className="h-3.5 w-3.5" />}
+            <p className="text-base font-semibold tracking-tight text-slate-100">{card.value}</p>
+            <p className={`mt-1 inline-flex items-center gap-0.5 text-[10px] font-medium ${positive ? "text-emerald-400" : "text-rose-400"}`}>
+              {positive ? <ArrowUpRight className="h-3 w-3" /> : <ArrowDownRight className="h-3 w-3" />}
               {Math.abs(card.trend)}% vs prior
             </p>
           </div>
